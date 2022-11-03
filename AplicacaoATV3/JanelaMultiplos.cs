@@ -20,7 +20,7 @@ namespace AplicacaoATV3
         private void btnExecutar_Click(object sender, EventArgs e)
         {
             //Instância da Janela
-            JanelaResultado janelaResultado = new JanelaResultado();
+            JanelaResultadoTabela janelaResultadoTabela = new JanelaResultadoTabela();
             //Calculo
             int primeiroNumero = Convert.ToInt32(txtBoxPrimeiroNumero.Text);
             int segundoNumero = Convert.ToInt32(txtBoxSegundoNumero.Text);
@@ -36,6 +36,7 @@ namespace AplicacaoATV3
                 if (testeModPrimeiro == 0)
                 {
                     listaMultiplosNumero1.Add(i);
+                    
                 }
                 if (testeModSegundo == 0)
                 {
@@ -43,7 +44,18 @@ namespace AplicacaoATV3
                 }
                 i++;
             }
+            //Coversão de Int para String
+            List<String> listaStringMultiplosNumero1 = janelaResultadoTabela.
+                converterListaEmString(listaMultiplosNumero1);
+            List<String> listaStringMultiplosNumero2 = janelaResultadoTabela.
+                converterListaEmString(listaMultiplosNumero2);
             //Devolução do Resultado
+            janelaResultadoTabela.addColuna("coluna1", $"{primeiroNumero}");
+            janelaResultadoTabela.addColuna("coluna2", $"{segundoNumero}");
+            janelaResultadoTabela.addLinhas(0, listaStringMultiplosNumero1);
+            janelaResultadoTabela.addLinhas(1, listaStringMultiplosNumero2);
+            janelaResultadoTabela.ShowDialog();
+
         }
     }
 }

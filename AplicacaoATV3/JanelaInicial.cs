@@ -26,7 +26,8 @@ namespace AplicacaoATV3
 
         private void btnMultiplos_Click(object sender, EventArgs e)
         {
-
+            JanelaMultiplos janelaMultiplos = new JanelaMultiplos();
+            janelaMultiplos.ShowDialog();
         }
     }
 }

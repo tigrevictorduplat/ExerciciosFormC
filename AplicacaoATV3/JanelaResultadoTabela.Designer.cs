@@ -36,7 +36,7 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(63, 70);
+            this.dataGridView.Location = new System.Drawing.Point(78, 70);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersWidth = 51;
@@ -48,7 +48,7 @@
             // 
             this.lblTituloResultadoTabela.AutoSize = true;
             this.lblTituloResultadoTabela.Font = new System.Drawing.Font("Georgia", 20F);
-            this.lblTituloResultadoTabela.Location = new System.Drawing.Point(71, 19);
+            this.lblTituloResultadoTabela.Location = new System.Drawing.Point(86, 9);
             this.lblTituloResultadoTabela.Name = "lblTituloResultadoTabela";
             this.lblTituloResultadoTabela.Size = new System.Drawing.Size(280, 39);
             this.lblTituloResultadoTabela.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 450);
+            this.ClientSize = new System.Drawing.Size(462, 450);
             this.Controls.Add(this.lblTituloResultadoTabela);
             this.Controls.Add(this.dataGridView);
             this.Name = "JanelaResultadoTabela";

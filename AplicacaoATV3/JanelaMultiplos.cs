@@ -27,33 +27,34 @@ namespace AplicacaoATV3
             int comecoIntervalo = Convert.ToInt32(txtIntervaloPrimeiro.Text);
             int finalIntervalo = Convert.ToInt32(txtIntervaloSegundo.Text);
             int i = comecoIntervalo;
-            List<int> listaMultiplosNumero1 = new List<int>();
-            List<int> listaMultiplosNumero2 = new List<int>();
+            int contadorLinha = 0;
+            //Data Table
+            DataTable dt = new DataTable();
+            dt.Columns.Add($"{primeiroNumero}");
+            dt.Columns.Add($"{segundoNumero}");
+
             while (i >= comecoIntervalo && i <= finalIntervalo)
             {
-                int testeModPrimeiro = i % primeiroNumero;
-                int testeModSegundo = i % segundoNumero;
-                if (testeModPrimeiro == 0)
+                dt.Rows.Add();
+                if (i % primeiroNumero == 0)
                 {
-                    listaMultiplosNumero1.Add(i);
-                    
+                    dt.Rows[contadorLinha][$"{primeiroNumero}"] = i;
                 }
-                if (testeModSegundo == 0)
+                if (i % segundoNumero == 0)
                 {
-                    listaMultiplosNumero2.Add(i);
+                    dt.Rows[contadorLinha][$"{segundoNumero}"] = i;
                 }
                 i++;
+                // Check null
+                if (dt.Rows[contadorLinha].IsNull(0) && dt.Rows[contadorLinha].IsNull(1))
+                {
+                    dt.Rows.Remove(dt.Rows[contadorLinha]);
+                } else { 
+                    contadorLinha++; 
+                }
             }
-            //Coversão de Int para String
-            List<String> listaStringMultiplosNumero1 = janelaResultadoTabela.
-                converterListaEmString(listaMultiplosNumero1);
-            List<String> listaStringMultiplosNumero2 = janelaResultadoTabela.
-                converterListaEmString(listaMultiplosNumero2);
             //Devolução do Resultado
-            janelaResultadoTabela.addColuna("coluna1", $"{primeiroNumero}");
-            janelaResultadoTabela.addColuna("coluna2", $"{segundoNumero}");
-            janelaResultadoTabela.addLinhas(0, listaStringMultiplosNumero1);
-            janelaResultadoTabela.addLinhas(1, listaStringMultiplosNumero2);
+            janelaResultadoTabela.setDadosTabela(dt);
             janelaResultadoTabela.ShowDialog();
 
         }

@@ -31,9 +31,9 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnFatorial = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnConversor = new System.Windows.Forms.Button();
             this.btnMultiplos = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnConversor);
             this.panel1.Controls.Add(this.btnMultiplos);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnFatorial);
@@ -71,15 +71,16 @@
             this.panel1.Size = new System.Drawing.Size(782, 295);
             this.panel1.TabIndex = 2;
             // 
-            // label1
+            // btnConversor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(475, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Escolha uma operação para realizar: ";
+            this.btnConversor.Font = new System.Drawing.Font("Georgia", 12F);
+            this.btnConversor.Location = new System.Drawing.Point(323, 206);
+            this.btnConversor.Name = "btnConversor";
+            this.btnConversor.Size = new System.Drawing.Size(145, 37);
+            this.btnConversor.TabIndex = 4;
+            this.btnConversor.Text = "Conversor C°";
+            this.btnConversor.UseVisualStyleBackColor = true;
+            this.btnConversor.Click += new System.EventHandler(this.btnConversor_Click);
             // 
             // btnMultiplos
             // 
@@ -92,15 +93,15 @@
             this.btnMultiplos.UseVisualStyleBackColor = true;
             this.btnMultiplos.Click += new System.EventHandler(this.btnMultiplos_Click);
             // 
-            // button1
+            // label1
             // 
-            this.button1.Font = new System.Drawing.Font("Georgia", 12F);
-            this.button1.Location = new System.Drawing.Point(323, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 37);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Conversor C°";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(160, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(475, 32);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Escolha uma operação para realizar: ";
             // 
             // JanelaInicial
             // 
@@ -121,7 +122,7 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnFatorial;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConversor;
         private System.Windows.Forms.Button btnMultiplos;
         private System.Windows.Forms.Label label1;
     }

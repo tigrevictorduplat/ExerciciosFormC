@@ -30,5 +30,11 @@ namespace AplicacaoATV3
             JanelaMultiplos janelaMultiplos = new JanelaMultiplos();
             janelaMultiplos.ShowDialog();
         }
+
+        private void btnConversor_Click(object sender, EventArgs e)
+        {
+            JanelaConversor janelaConversor = new JanelaConversor();
+            janelaConversor.ShowDialog();
+        }
     }
 }

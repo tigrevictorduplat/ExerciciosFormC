@@ -26,3 +26,4 @@ C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\Exercici
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV3\obj\Debug\AplicacaoATV3.csproj.CoreCompileInputs.cache
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV3\obj\Debug\AplicacaoATV3.exe
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV3\obj\Debug\AplicacaoATV3.pdb
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV3\obj\Debug\AplicacaoATV3.JanelaConversor.resources

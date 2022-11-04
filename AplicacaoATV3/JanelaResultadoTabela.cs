@@ -20,6 +20,10 @@ namespace AplicacaoATV3
         {
             this.dataGridView.DataSource = dados;
         }
+        public void setTituloResultado(String titulo)
+        {
+            this.lblTituloResultadoTabela.Text = titulo;
+        }
 
     }
 }

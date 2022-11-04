@@ -55,6 +55,7 @@ namespace AplicacaoATV3
             }
             //Devolução do Resultado
             janelaResultadoTabela.setDadosTabela(dt);
+            janelaResultadoTabela.setTituloResultado("Tabela de Múltiplos");
             janelaResultadoTabela.ShowDialog();
 
         }

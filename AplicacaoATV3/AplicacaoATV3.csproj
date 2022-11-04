@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JanelaConversor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaConversor.Designer.cs">
+      <DependentUpon>JanelaConversor.cs</DependentUpon>
+    </Compile>
     <Compile Include="JanelaResultadoTabela.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="JanelaConversor.resx">
+      <DependentUpon>JanelaConversor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JanelaMultiplos.resx">
       <DependentUpon>JanelaMultiplos.cs</DependentUpon>
     </EmbeddedResource>

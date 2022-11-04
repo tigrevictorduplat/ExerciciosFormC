@@ -16,28 +16,10 @@ namespace AplicacaoATV3
         {
             InitializeComponent();
         }
-
-        public void addColuna(String nomeVariavelColuna, String tituloColuna)
+        public void setDadosTabela(DataTable dados)
         {
-            dataGridView.Columns.Add(nomeVariavelColuna,tituloColuna);
-
+            this.dataGridView.DataSource = dados;
         }
 
-        public void addLinhas (int indexColuna , List<String> listaLinhas)
-        {
-            for (int i = 0; i < listaLinhas.Count; i++)
-            {
-                dataGridView[0,i].Value = listaLinhas[i];
-            }
-        }
-        public List<String> converterListaEmString(List<int> listaInt)
-        {
-            List<String> listaEmString = new List<String>();
-            foreach (int i in listaInt)
-            {
-                listaEmString.Add(i.ToString());
-            }
-            return listaEmString;
-        }
     }
 }

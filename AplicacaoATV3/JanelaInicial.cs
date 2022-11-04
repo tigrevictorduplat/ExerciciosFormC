@@ -19,8 +19,9 @@ namespace AplicacaoATV3
 
         private void btnFatorial_Click(object sender, EventArgs e)
         {
-            JanelaFatorial janelaFatorial = new JanelaFatorial();
+            JanelaFatorial janelaFatorial = new JanelaFatorial();          
             janelaFatorial.ShowDialog();
+    
             
         }
 

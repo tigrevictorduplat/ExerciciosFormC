@@ -1,0 +1,12 @@
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\bin\Debug\FormEleitoral.exe.config
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\bin\Debug\FormEleitoral.exe
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\bin\Debug\FormEleitoral.pdb
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.csproj.AssemblyReference.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.csproj.SuggestedBindingRedirects.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaColinha.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaInicial.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.Properties.Resources.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.csproj.GenerateResource.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.csproj.CoreCompileInputs.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.exe
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.pdb

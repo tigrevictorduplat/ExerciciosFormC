@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace FormEleitoral
 {
-    public partial class Form1 : Form
+    public partial class JanelaInicial : Form
     {
-        public Form1()
+        public JanelaInicial()
         {
             InitializeComponent();
+        }
+
+        private void btColinha_Click(object sender, EventArgs e)
+        {
+            JanelaColinha janelaColinha = new JanelaColinha();
+            janelaColinha.ShowDialog();
         }
     }
 }

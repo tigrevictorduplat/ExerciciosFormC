@@ -46,14 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="JanelaColinha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="JanelaColinha.Designer.cs">
+      <DependentUpon>JanelaColinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JanelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaInicial.Designer.cs">
+      <DependentUpon>JanelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="JanelaColinha.resx">
+      <DependentUpon>JanelaColinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaInicial.resx">
+      <DependentUpon>JanelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +87,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JarJar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padmé.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yoda.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

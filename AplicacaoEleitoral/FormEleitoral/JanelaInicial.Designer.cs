@@ -30,8 +30,8 @@
         {
             this.lbTituloMenu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btComecar = new System.Windows.Forms.Button();
             this.btColinha = new System.Windows.Forms.Button();
+            this.btComecar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,16 +59,6 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 1;
             // 
-            // btComecar
-            // 
-            this.btComecar.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btComecar.Location = new System.Drawing.Point(180, 184);
-            this.btComecar.Name = "btComecar";
-            this.btComecar.Size = new System.Drawing.Size(440, 44);
-            this.btComecar.TabIndex = 1;
-            this.btComecar.Text = "Começar Votação";
-            this.btComecar.UseVisualStyleBackColor = true;
-            // 
             // btColinha
             // 
             this.btColinha.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -79,6 +69,17 @@
             this.btColinha.Text = "Colinha dos Candidatos";
             this.btColinha.UseVisualStyleBackColor = true;
             this.btColinha.Click += new System.EventHandler(this.btColinha_Click);
+            // 
+            // btComecar
+            // 
+            this.btComecar.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btComecar.Location = new System.Drawing.Point(180, 184);
+            this.btComecar.Name = "btComecar";
+            this.btComecar.Size = new System.Drawing.Size(440, 44);
+            this.btComecar.TabIndex = 1;
+            this.btComecar.Text = "Começar Votação";
+            this.btComecar.UseVisualStyleBackColor = true;
+            this.btComecar.Click += new System.EventHandler(this.btComecar_Click);
             // 
             // JanelaInicial
             // 

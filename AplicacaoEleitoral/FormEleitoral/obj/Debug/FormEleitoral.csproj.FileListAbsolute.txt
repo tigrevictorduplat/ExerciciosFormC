@@ -10,3 +10,9 @@ C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\Exercici
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.csproj.CoreCompileInputs.cache
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.exe
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.pdb
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\bin\Debug\aa\FormEleitoral.resources.dll
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaColinha.aa.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\aa\FormEleitoral.resources.dll
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaUrnaVotacao.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.ConfirmacaoVoto.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaApuracao.resources

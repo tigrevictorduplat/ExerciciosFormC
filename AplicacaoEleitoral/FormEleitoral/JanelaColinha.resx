@@ -117,4 +117,154 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbNumeroCandidato.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lbNumeroCandidato.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lbNumeroCandidato.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 28.2pt, style=Bold</value>
+  </data>
+  <data name="lbNumeroCandidato.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 387</value>
+  </data>
+  <data name="lbNumeroCandidato.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 54</value>
+  </data>
+  <data name="lbNumeroCandidato.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lbNumeroCandidato.Text" xml:space="preserve">
+    <value>--</value>
+  </data>
+  <data name="lbNumeroCandidato.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;lbNumeroCandidato.Name" xml:space="preserve">
+    <value>lbNumeroCandidato</value>
+  </data>
+  <data name="&gt;&gt;lbNumeroCandidato.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbNumeroCandidato.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lbNumeroCandidato.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBoxCandidatoColinha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 88</value>
+  </data>
+  <data name="pictureBoxCandidatoColinha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 287</value>
+  </data>
+  <data name="pictureBoxCandidatoColinha.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBoxCandidatoColinha.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCandidatoColinha.Name" xml:space="preserve">
+    <value>pictureBoxCandidatoColinha</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCandidatoColinha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCandidatoColinha.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCandidatoColinha.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxColinha.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="comboBoxColinha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Georgia, 12pt</value>
+  </data>
+  <data name="comboBoxColinha.Items" xml:space="preserve">
+    <value>Jar Jar Binks</value>
+  </data>
+  <data name="comboBoxColinha.Items1" xml:space="preserve">
+    <value>Darth Vader</value>
+  </data>
+  <data name="comboBoxColinha.Items2" xml:space="preserve">
+    <value>Senadora Padmé</value>
+  </data>
+  <data name="comboBoxColinha.Items3" xml:space="preserve">
+    <value>Mestre Yoda</value>
+  </data>
+  <data name="comboBoxColinha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 12</value>
+  </data>
+  <data name="comboBoxColinha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 32</value>
+  </data>
+  <data name="comboBoxColinha.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBoxColinha.Text" xml:space="preserve">
+    <value>Selecione o Candidato</value>
+  </data>
+  <data name="&gt;&gt;comboBoxColinha.Name" xml:space="preserve">
+    <value>comboBoxColinha</value>
+  </data>
+  <data name="&gt;&gt;comboBoxColinha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxColinha.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxColinha.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>533, 450</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>533, 450</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Colinha dos Candidatos</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>JanelaColinha</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

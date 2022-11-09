@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JanelaColinha));
             this.lbNumeroCandidato = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxCandidatoColinha = new System.Windows.Forms.PictureBox();
@@ -38,62 +39,41 @@
             // 
             // lbNumeroCandidato
             // 
-            this.lbNumeroCandidato.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbNumeroCandidato.AutoSize = true;
-            this.lbNumeroCandidato.Font = new System.Drawing.Font("Georgia", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNumeroCandidato.Location = new System.Drawing.Point(371, 387);
+            resources.ApplyResources(this.lbNumeroCandidato, "lbNumeroCandidato");
             this.lbNumeroCandidato.Name = "lbNumeroCandidato";
-            this.lbNumeroCandidato.Size = new System.Drawing.Size(59, 54);
-            this.lbNumeroCandidato.TabIndex = 1;
-            this.lbNumeroCandidato.Text = "--";
-            this.lbNumeroCandidato.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lbNumeroCandidato);
             this.panel1.Controls.Add(this.pictureBoxCandidatoColinha);
             this.panel1.Controls.Add(this.comboBoxColinha);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 450);
-            this.panel1.TabIndex = 3;
             // 
             // pictureBoxCandidatoColinha
             // 
-            this.pictureBoxCandidatoColinha.Location = new System.Drawing.Point(257, 82);
+            resources.ApplyResources(this.pictureBoxCandidatoColinha, "pictureBoxCandidatoColinha");
             this.pictureBoxCandidatoColinha.Name = "pictureBoxCandidatoColinha";
-            this.pictureBoxCandidatoColinha.Size = new System.Drawing.Size(287, 287);
-            this.pictureBoxCandidatoColinha.TabIndex = 1;
             this.pictureBoxCandidatoColinha.TabStop = false;
             // 
             // comboBoxColinha
             // 
-            this.comboBoxColinha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxColinha.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.comboBoxColinha, "comboBoxColinha");
             this.comboBoxColinha.FormattingEnabled = true;
             this.comboBoxColinha.Items.AddRange(new object[] {
-            "Jar Jar",
-            "Mestre Yoda",
-            "Darth Vader",
-            "Senadora Padmé"});
-            this.comboBoxColinha.Location = new System.Drawing.Point(264, 21);
+            resources.GetString("comboBoxColinha.Items"),
+            resources.GetString("comboBoxColinha.Items1"),
+            resources.GetString("comboBoxColinha.Items2"),
+            resources.GetString("comboBoxColinha.Items3")});
             this.comboBoxColinha.Name = "comboBoxColinha";
-            this.comboBoxColinha.Size = new System.Drawing.Size(287, 32);
-            this.comboBoxColinha.TabIndex = 0;
-            this.comboBoxColinha.Text = "Selecione o Candidato";
             this.comboBoxColinha.SelectedIndexChanged += new System.EventHandler(this.comboBoxColinha_SelectedIndexChanged);
             // 
             // JanelaColinha
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "JanelaColinha";
-            this.Text = "Colinha dos Candidatos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCandidatoColinha)).EndInit();

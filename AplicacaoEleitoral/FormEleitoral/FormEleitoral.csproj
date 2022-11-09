@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfirmacaoVoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmacaoVoto.Designer.cs">
+      <DependentUpon>ConfirmacaoVoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JanelaApuracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaApuracao.Designer.cs">
+      <DependentUpon>JanelaApuracao.cs</DependentUpon>
+    </Compile>
     <Compile Include="JanelaColinha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,27 +70,46 @@
     <Compile Include="JanelaInicial.Designer.cs">
       <DependentUpon>JanelaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="JanelaUrnaVotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaUrnaVotacao.Designer.cs">
+      <DependentUpon>JanelaUrnaVotacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfirmacaoVoto.resx">
+      <DependentUpon>ConfirmacaoVoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaApuracao.resx">
+      <DependentUpon>JanelaApuracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaColinha.aa.resx">
+      <DependentUpon>JanelaColinha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JanelaColinha.resx">
       <DependentUpon>JanelaColinha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaInicial.resx">
       <DependentUpon>JanelaInicial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="JanelaUrnaVotacao.resx">
+      <DependentUpon>JanelaUrnaVotacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -89,16 +120,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\JarJar.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Padmé.jpg" />
+    <None Include="Properties\res\JarJar.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Vader.jpg" />
+    <None Include="Properties\res\Padme.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Yoda.jpg" />
+    <None Include="Properties\res\Vader.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\res\Yoda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\res\Nulo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\res\Branco.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

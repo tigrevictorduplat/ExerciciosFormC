@@ -16,3 +16,4 @@ C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\Exercici
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaUrnaVotacao.resources
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.ConfirmacaoVoto.resources
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaApuracao.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoEleitoral\FormEleitoral\obj\Debug\FormEleitoral.JanelaTeste.resources

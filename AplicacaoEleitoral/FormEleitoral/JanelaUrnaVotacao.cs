@@ -13,7 +13,7 @@ namespace FormEleitoral
     public partial class JanelaUrnaVotacao : Form
     {
         private int contadorDigito;
-        private int[] votoCandidato = { 0,0,0,0,0,0};
+        private int[] votoCandidatos = { 0,0,0,0,0,0};
         public JanelaUrnaVotacao()
         {
             InitializeComponent();
@@ -143,37 +143,33 @@ namespace FormEleitoral
 
         private void btnConfirma_Click(object sender, EventArgs e)
         {
-            switch (this.lbNumeroDigitado.Text)
+            switch (this.lblNomeCandidato.Text)
             {
-                case "10":
-                    //"Jar Jar Binks"
-                    this.votoCandidato[0]++;
+                case "Jar Jar Binks":
+                    this.votoCandidatos[0]++;
                     break;
-                case "11":
-                    //"Darth Vader"
-                    this.votoCandidato[1]++;
+                case "Darth Vader":
+                    this.votoCandidatos[1]++;
                     break;
-                case "12":
-                    // "Senadora Padmé"
-                    this.votoCandidato[2]++;
+                case "Senadora Padmé":
+                    this.votoCandidatos[2]++;
                     break;
 
-                case "13":
-                    //"Mestre Yoda"
-                    this.votoCandidato[3]++;
+                case "Mestre Yoda":
+                    this.votoCandidatos[3]++;
                     break;
                 case "NULO":
-                    this.votoCandidato[4]++;
+                    this.votoCandidatos[4]++;
                     break;
                 case "BRANCO":
-                    this.votoCandidato[5]++;
+                    this.votoCandidatos[5]++;
                     break;
             }
         
             this.lbNumeroDigitado.Text = "--";
             this.contadorDigito = 0;
             ConfirmacaoVoto voto = new ConfirmacaoVoto();
-            voto.setResultado(votoCandidato);
+            voto.recebeArrayVotos(votoCandidatos);
             voto.ShowDialog();
         }
     }

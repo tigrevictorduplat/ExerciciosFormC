@@ -13,10 +13,11 @@ namespace FormEleitoral
 {
     public partial class JanelaApuracao : Form
     {
-        private int[] resultadoVotacao;
+        private int[] resultadoVotacao = {0,0,0,0,0,0};
         public JanelaApuracao()
         {
             InitializeComponent();
+          
             //Vencedor - Nome e Votos
             this.lblNomeCandidatoVencedor.Text = encontraNomeVencedor(resultadoVotacao);
             int indexVencedor = calculaIndexVencedor(resultadoVotacao);
@@ -31,12 +32,12 @@ namespace FormEleitoral
 
         private double calculaPorcentagem(int indexArray)
         {
-            int somaVotos = 0;
-            foreach (int i in resultadoVotacao)
+            int somaVotos = 1;
+            for (int i = 0; i < this.resultadoVotacao.Length; i++)
             {
                 somaVotos += resultadoVotacao[i];
             }
-            double resultadoPorcentagem = resultadoVotacao[indexArray]/(somaVotos);
+            double resultadoPorcentagem = this.resultadoVotacao[indexArray]/(somaVotos);
             return resultadoPorcentagem;
         }
         private int calculaIndexVencedor(int[] arrayResultado)
@@ -71,10 +72,9 @@ namespace FormEleitoral
             }
             return ganhadorVotacao;
         }
-
-        public void setResultado(int[] arrayResultado)
+        public void recebeArrayVotos(int[] votoArray)
         {
-            this.resultadoVotacao = arrayResultado;
+            this.resultadoVotacao = votoArray;
         }
     }
     

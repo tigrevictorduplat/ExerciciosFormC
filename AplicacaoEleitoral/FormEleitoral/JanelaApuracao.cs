@@ -13,15 +13,14 @@ namespace FormEleitoral
 {
     public partial class JanelaApuracao : Form
     {
-        private int[] resultadoVotacao = {0,0,0,0,0,0};
+        private List<int> resultadoVotacao;
         public JanelaApuracao()
         {
             InitializeComponent();
           
             //Vencedor - Nome e Votos
             this.lblNomeCandidatoVencedor.Text = encontraNomeVencedor(resultadoVotacao);
-            int indexVencedor = calculaIndexVencedor(resultadoVotacao);
-            this.lblValorVotosVencedor.Text = resultadoVotacao[indexVencedor].ToString();
+            this.lblValorVotosVencedor.Text = resultadoVotacao.Max().ToString();
             //Nulo - Valor e Porcentagem
             this.lblValorVotosNulo.Text = resultadoVotacao[4].ToString();
             this.lblApuracaoPorCentoNulo.Text = calculaPorcentagem(4).ToString("F");
@@ -30,29 +29,17 @@ namespace FormEleitoral
             this.lblApuracaoPorCentoBranco.Text = calculaPorcentagem(5).ToString("F");
         }
 
-        private double calculaPorcentagem(int indexArray)
+        private double calculaPorcentagem(int indexCandidato)
         {
-            int somaVotos = 1;
-            for (int i = 0; i < this.resultadoVotacao.Length; i++)
-            {
-                somaVotos += resultadoVotacao[i];
-            }
-            double resultadoPorcentagem = this.resultadoVotacao[indexArray]/(somaVotos);
+            double resultadoPorcentagem = this.resultadoVotacao[indexCandidato] / this.resultadoVotacao.Sum();
             return resultadoPorcentagem;
         }
-        private int calculaIndexVencedor(int[] arrayResultado)
+        private string encontraNomeVencedor(List<int> listaResultado)
         {
-            int indexMaiorResultado = -1;
-            for (int i = 0; i < (arrayResultado.Length - 1); i++)
-            {
-                indexMaiorResultado = (arrayResultado[i] >= arrayResultado[i + 1]) ? i : i + 1;
-            }
-            return indexMaiorResultado;
-        }
-        private string encontraNomeVencedor(int[] arrayResultado)
-        {
+            int indexGanhador = this.resultadoVotacao.FindIndex(item => item == resultadoVotacao.Max());
             string ganhadorVotacao="";
-            switch (calculaIndexVencedor(arrayResultado))
+            
+            switch (indexGanhador)
             {
                 case 0:
                     ganhadorVotacao = "Jar Jar Binks";
@@ -66,15 +53,15 @@ namespace FormEleitoral
                 case 3:
                     ganhadorVotacao = "Mestre Yoda";
                     break;
-                    default:
+                default:
                     ganhadorVotacao = "Segundo Turno";
                     break;
             }
             return ganhadorVotacao;
         }
-        public void recebeArrayVotos(int[] votoArray)
+        public void recebeArrayVotos(List<int> votoList)
         {
-            this.resultadoVotacao = votoArray;
+            this.resultadoVotacao = votoList;
         }
     }
     

@@ -13,10 +13,16 @@ namespace FormEleitoral
     public partial class JanelaUrnaVotacao : Form
     {
         private int contadorDigito;
-        private int[] votoCandidatos = { 0,0,0,0,0,0};
+        private List<int> votoCandidatos = new List<int>();
         public JanelaUrnaVotacao()
         {
             InitializeComponent();
+            this.votoCandidatos.Add(0);
+            this.votoCandidatos.Add(0);
+            this.votoCandidatos.Add(0);
+            this.votoCandidatos.Add(0);
+            this.votoCandidatos.Add(0);
+            this.votoCandidatos.Add(0);
         }
 
         private void lbNumeroDigitado_TextChanged(object sender, EventArgs e)

@@ -14,7 +14,6 @@ namespace FormEleitoral
     
     public partial class ConfirmacaoVoto : Form
     {
-        private List<int> votoParcialCandidatos;
         public ConfirmacaoVoto()
         {
             InitializeComponent();
@@ -23,14 +22,8 @@ namespace FormEleitoral
         private void btnFinaliza_Click(object sender, EventArgs e)
         {
             JanelaApuracao janelaApuracao = new JanelaApuracao();
-        
-            janelaApuracao.recebeArrayVotos(votoParcialCandidatos);
             janelaApuracao.ShowDialog();
 
         } 
-        public void recebeArrayVotos(List<int> votoList)
-        {
-            this.votoParcialCandidatos = votoList;
-        }
     }
 }

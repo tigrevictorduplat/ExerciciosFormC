@@ -64,11 +64,11 @@
             this.lblApuracaoVotos.AutoSize = true;
             this.lblApuracaoVotos.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApuracaoVotos.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblApuracaoVotos.Location = new System.Drawing.Point(231, 193);
+            this.lblApuracaoVotos.Location = new System.Drawing.Point(270, 164);
             this.lblApuracaoVotos.Name = "lblApuracaoVotos";
-            this.lblApuracaoVotos.Size = new System.Drawing.Size(227, 27);
+            this.lblApuracaoVotos.Size = new System.Drawing.Size(219, 27);
             this.lblApuracaoVotos.TabIndex = 4;
-            this.lblApuracaoVotos.Text = "Número de Votos:";
+            this.lblApuracaoVotos.Text = "Número de Votos";
             this.lblApuracaoVotos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblApuracaoVotosBranco
@@ -78,11 +78,11 @@
             this.lblApuracaoVotosBranco.AutoSize = true;
             this.lblApuracaoVotosBranco.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApuracaoVotosBranco.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblApuracaoVotosBranco.Location = new System.Drawing.Point(12, 263);
+            this.lblApuracaoVotosBranco.Location = new System.Drawing.Point(12, 236);
             this.lblApuracaoVotosBranco.Name = "lblApuracaoVotosBranco";
-            this.lblApuracaoVotosBranco.Size = new System.Drawing.Size(223, 27);
+            this.lblApuracaoVotosBranco.Size = new System.Drawing.Size(215, 27);
             this.lblApuracaoVotosBranco.TabIndex = 5;
-            this.lblApuracaoVotosBranco.Text = "Votos em Branco:";
+            this.lblApuracaoVotosBranco.Text = "Votos em Branco";
             this.lblApuracaoVotosBranco.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblApuracaoVotosNulo
@@ -92,11 +92,11 @@
             this.lblApuracaoVotosNulo.AutoSize = true;
             this.lblApuracaoVotosNulo.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApuracaoVotosNulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblApuracaoVotosNulo.Location = new System.Drawing.Point(413, 263);
+            this.lblApuracaoVotosNulo.Location = new System.Drawing.Point(510, 236);
             this.lblApuracaoVotosNulo.Name = "lblApuracaoVotosNulo";
-            this.lblApuracaoVotosNulo.Size = new System.Drawing.Size(165, 27);
+            this.lblApuracaoVotosNulo.Size = new System.Drawing.Size(157, 27);
             this.lblApuracaoVotosNulo.TabIndex = 6;
-            this.lblApuracaoVotosNulo.Text = "Votos Nulos:";
+            this.lblApuracaoVotosNulo.Text = "Votos Nulos";
             this.lblApuracaoVotosNulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblApuracaoPorCentoNulo
@@ -106,7 +106,7 @@
             this.lblApuracaoPorCentoNulo.AutoSize = true;
             this.lblApuracaoPorCentoNulo.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApuracaoPorCentoNulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblApuracaoPorCentoNulo.Location = new System.Drawing.Point(584, 301);
+            this.lblApuracaoPorCentoNulo.Location = new System.Drawing.Point(563, 317);
             this.lblApuracaoPorCentoNulo.Name = "lblApuracaoPorCentoNulo";
             this.lblApuracaoPorCentoNulo.Size = new System.Drawing.Size(50, 27);
             this.lblApuracaoPorCentoNulo.TabIndex = 8;
@@ -120,7 +120,7 @@
             this.lblApuracaoPorCentoBranco.AutoSize = true;
             this.lblApuracaoPorCentoBranco.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApuracaoPorCentoBranco.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblApuracaoPorCentoBranco.Location = new System.Drawing.Point(231, 301);
+            this.lblApuracaoPorCentoBranco.Location = new System.Drawing.Point(94, 317);
             this.lblApuracaoPorCentoBranco.Name = "lblApuracaoPorCentoBranco";
             this.lblApuracaoPorCentoBranco.Size = new System.Drawing.Size(50, 27);
             this.lblApuracaoPorCentoBranco.TabIndex = 7;
@@ -147,7 +147,7 @@
             this.lblValorVotosBranco.AutoSize = true;
             this.lblValorVotosBranco.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorVotosBranco.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblValorVotosBranco.Location = new System.Drawing.Point(231, 263);
+            this.lblValorVotosBranco.Location = new System.Drawing.Point(104, 279);
             this.lblValorVotosBranco.Name = "lblValorVotosBranco";
             this.lblValorVotosBranco.Size = new System.Drawing.Size(30, 27);
             this.lblValorVotosBranco.TabIndex = 9;
@@ -161,7 +161,7 @@
             this.lblValorVotosVencedor.AutoSize = true;
             this.lblValorVotosVencedor.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorVotosVencedor.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblValorVotosVencedor.Location = new System.Drawing.Point(464, 193);
+            this.lblValorVotosVencedor.Location = new System.Drawing.Point(364, 200);
             this.lblValorVotosVencedor.Name = "lblValorVotosVencedor";
             this.lblValorVotosVencedor.Size = new System.Drawing.Size(30, 27);
             this.lblValorVotosVencedor.TabIndex = 11;
@@ -175,7 +175,7 @@
             this.lblValorVotosNulo.AutoSize = true;
             this.lblValorVotosNulo.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorVotosNulo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblValorVotosNulo.Location = new System.Drawing.Point(584, 263);
+            this.lblValorVotosNulo.Location = new System.Drawing.Point(573, 279);
             this.lblValorVotosNulo.Name = "lblValorVotosNulo";
             this.lblValorVotosNulo.Size = new System.Drawing.Size(30, 27);
             this.lblValorVotosNulo.TabIndex = 12;
@@ -209,16 +209,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 383);
             this.Controls.Add(this.lblValorVotosNulo);
+            this.Controls.Add(this.lblValorVotosBranco);
             this.Controls.Add(this.lblValorVotosVencedor);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.lblValorVotosBranco);
-            this.Controls.Add(this.lblApuracaoPorCentoNulo);
-            this.Controls.Add(this.lblApuracaoPorCentoBranco);
             this.Controls.Add(this.lblApuracaoVotosNulo);
             this.Controls.Add(this.lblApuracaoVotosBranco);
             this.Controls.Add(this.lblApuracaoVotos);
             this.Controls.Add(this.lblApuracaoTitulo);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblApuracaoPorCentoNulo);
+            this.Controls.Add(this.lblApuracaoPorCentoBranco);
             this.Name = "JanelaApuracao";
             this.Text = "Apuração dos Votos";
             this.panel1.ResumeLayout(false);

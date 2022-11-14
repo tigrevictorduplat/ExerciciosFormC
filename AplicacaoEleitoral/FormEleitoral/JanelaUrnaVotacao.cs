@@ -12,11 +12,14 @@ namespace FormEleitoral
 {
     public partial class JanelaUrnaVotacao : Form
     {
+        public static JanelaUrnaVotacao instancia;
         private int contadorDigito;
-        private List<int> votoCandidatos = new List<int>();
+        private List<int> votoCandidatos = new List<int>(6);
+
         public JanelaUrnaVotacao()
         {
             InitializeComponent();
+            instancia = this;
             this.votoCandidatos.Add(0);
             this.votoCandidatos.Add(0);
             this.votoCandidatos.Add(0);
@@ -58,6 +61,10 @@ namespace FormEleitoral
                     }
                    break;
             }
+        }
+        public List<int> getVotosCandidatos()
+        {
+            return this.votoCandidatos;
         }
 
         private void inserirNovoDigito(char novoDigito) {
@@ -175,7 +182,6 @@ namespace FormEleitoral
             this.lbNumeroDigitado.Text = "--";
             this.contadorDigito = 0;
             ConfirmacaoVoto voto = new ConfirmacaoVoto();
-            voto.recebeArrayVotos(votoCandidatos);
             voto.ShowDialog();
         }
     }

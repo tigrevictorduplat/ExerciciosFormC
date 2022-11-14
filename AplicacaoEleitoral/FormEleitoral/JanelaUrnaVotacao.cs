@@ -167,7 +167,6 @@ namespace FormEleitoral
                 case "Senadora Padmé":
                     this.votoCandidatos[2]++;
                     break;
-
                 case "Mestre Yoda":
                     this.votoCandidatos[3]++;
                     break;

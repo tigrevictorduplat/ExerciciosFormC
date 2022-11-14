@@ -32,7 +32,7 @@ namespace FormEleitoral
         private float calculaPorcentagem(int indexCandidato)
         {
             float totalVotacao = this.resultadoVotacao.Sum();
-            float resultadoPorcentagem = (this.resultadoVotacao[4] / totalVotacao) * 100;
+            float resultadoPorcentagem = (this.resultadoVotacao[indexCandidato] / totalVotacao) * 100;
             return resultadoPorcentagem;
         }
         private string encontraNomeVencedor(List<int> listaResultado)
@@ -60,10 +60,6 @@ namespace FormEleitoral
                     break;
             }
             return ganhadorVotacao;
-        }
-        public void recebeArrayVotosFinais(List<int> votoList)
-        {
-            this.resultadoVotacao = votoList;
         }
     }
     

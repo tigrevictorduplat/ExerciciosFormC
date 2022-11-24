@@ -1,0 +1,12 @@
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\bin\Debug\AplicacaoEscolar.exe.config
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\bin\Debug\AplicacaoEscolar.exe
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\bin\Debug\AplicacaoEscolar.pdb
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.csproj.AssemblyReference.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.csproj.SuggestedBindingRedirects.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.JanelaCadastroTabela.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.JanelaInicial.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.Properties.Resources.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.csproj.GenerateResource.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.csproj.CoreCompileInputs.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.exe
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.pdb

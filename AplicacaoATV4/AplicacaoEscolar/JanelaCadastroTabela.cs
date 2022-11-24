@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace AplicacaoEscolar
 {
-    public partial class Form1 : Form
+    public partial class JanelaCadastroTabela : Form
     {
-        public Form1()
+        public JanelaCadastroTabela()
         {
             InitializeComponent();
         }
+
+        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -46,14 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="JanelaCadastroTabela.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="JanelaCadastroTabela.Designer.cs">
+      <DependentUpon>JanelaCadastroTabela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <Compile Include="JanelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaInicial.Designer.cs">
+      <DependentUpon>JanelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="JanelaCadastroTabela.resx">
+      <DependentUpon>JanelaCadastroTabela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaInicial.resx">
+      <DependentUpon>JanelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

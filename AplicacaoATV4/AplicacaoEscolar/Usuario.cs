@@ -8,13 +8,12 @@ namespace AplicacaoEscolar
 {
     internal class Usuario
     {
-        private string login{get; set; }
-        private string senha { get; set; }
-        private string status { get; set; }
-        private string tipo { get;}
-        private string perfil { get; set; }
-        private string obsExtra {get; set; }
-
+        private string logi;
+        private string senha;
+        private string status;
+        private string tipo;
+        private string perfil;
+        private string obsExtra;
         private string[] modulosEstudo;
         private DateTime dataCriacao;
 

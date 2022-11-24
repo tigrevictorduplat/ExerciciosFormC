@@ -51,10 +51,9 @@
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkFisica = new System.Windows.Forms.CheckBox();
+            this.checkQuimica = new System.Windows.Forms.CheckBox();
+            this.checkMatematica = new System.Windows.Forms.CheckBox();
             this.lblModulo = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView = new System.Windows.Forms.DataGridView();
@@ -65,6 +64,11 @@
             this.colunaData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colunaPerfil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colunaModulos = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,12 +87,14 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(754, 367);
+            this.tabControl.Size = new System.Drawing.Size(754, 445);
             this.tabControl.TabIndex = 0;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnLimpar);
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
@@ -102,7 +108,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(746, 338);
+            this.tabPage1.Size = new System.Drawing.Size(746, 416);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Novo Cadastro";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -112,9 +118,9 @@
             this.panel2.Controls.Add(this.rdConvidado);
             this.panel2.Controls.Add(this.rdAdministrador);
             this.panel2.Controls.Add(this.lblPerfil);
-            this.panel2.Location = new System.Drawing.Point(347, 109);
+            this.panel2.Location = new System.Drawing.Point(316, 114);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(382, 64);
+            this.panel2.Size = new System.Drawing.Size(380, 64);
             this.panel2.TabIndex = 13;
             // 
             // rdConvidado
@@ -170,9 +176,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(349, 222);
+            this.richTextBox1.Location = new System.Drawing.Point(22, 243);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(365, 81);
+            this.richTextBox1.Size = new System.Drawing.Size(258, 80);
             this.richTextBox1.TabIndex = 9;
             this.richTextBox1.Text = "";
             // 
@@ -180,7 +186,7 @@
             // 
             this.lblObs.AutoSize = true;
             this.lblObs.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObs.Location = new System.Drawing.Point(346, 184);
+            this.lblObs.Location = new System.Drawing.Point(86, 221);
             this.lblObs.Name = "lblObs";
             this.lblObs.Size = new System.Drawing.Size(118, 19);
             this.lblObs.TabIndex = 6;
@@ -213,7 +219,7 @@
             this.panel1.Controls.Add(this.rdProfessor);
             this.panel1.Controls.Add(this.rdTecnico);
             this.panel1.Controls.Add(this.lblTipo);
-            this.panel1.Location = new System.Drawing.Point(349, 20);
+            this.panel1.Location = new System.Drawing.Point(316, 23);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(380, 64);
             this.panel1.TabIndex = 12;
@@ -309,61 +315,53 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.checkBox6);
+            this.panel4.Controls.Add(this.checkFisica);
+            this.panel4.Controls.Add(this.checkBox5);
+            this.panel4.Controls.Add(this.checkQuimica);
             this.panel4.Controls.Add(this.checkBox4);
-            this.panel4.Controls.Add(this.checkBox3);
-            this.panel4.Controls.Add(this.checkBox2);
-            this.panel4.Controls.Add(this.checkBox1);
+            this.panel4.Controls.Add(this.checkMatematica);
             this.panel4.Controls.Add(this.lblModulo);
-            this.panel4.Location = new System.Drawing.Point(12, 212);
+            this.panel4.Location = new System.Drawing.Point(316, 205);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(272, 118);
+            this.panel4.Size = new System.Drawing.Size(406, 118);
             this.panel4.TabIndex = 19;
             // 
-            // checkBox4
+            // checkFisica
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(152, 95);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(95, 20);
-            this.checkBox4.TabIndex = 18;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkFisica.AutoSize = true;
+            this.checkFisica.Location = new System.Drawing.Point(132, 48);
+            this.checkFisica.Name = "checkFisica";
+            this.checkFisica.Size = new System.Drawing.Size(65, 20);
+            this.checkFisica.TabIndex = 17;
+            this.checkFisica.Text = "Física";
+            this.checkFisica.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkQuimica
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(152, 52);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(95, 20);
-            this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkQuimica.AutoSize = true;
+            this.checkQuimica.Location = new System.Drawing.Point(14, 79);
+            this.checkQuimica.Name = "checkQuimica";
+            this.checkQuimica.Size = new System.Drawing.Size(78, 20);
+            this.checkQuimica.TabIndex = 16;
+            this.checkQuimica.Text = "Química";
+            this.checkQuimica.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkMatematica
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(12, 95);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(95, 20);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 52);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 20);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkMatematica.AutoSize = true;
+            this.checkMatematica.Location = new System.Drawing.Point(14, 48);
+            this.checkMatematica.Name = "checkMatematica";
+            this.checkMatematica.Size = new System.Drawing.Size(99, 20);
+            this.checkMatematica.TabIndex = 15;
+            this.checkMatematica.Text = "Matemática";
+            this.checkMatematica.UseVisualStyleBackColor = true;
             // 
             // lblModulo
             // 
             this.lblModulo.AutoSize = true;
             this.lblModulo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo.Location = new System.Drawing.Point(94, 10);
+            this.lblModulo.Location = new System.Drawing.Point(10, 16);
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Size = new System.Drawing.Size(75, 19);
             this.lblModulo.TabIndex = 7;
@@ -461,11 +459,61 @@
             this.colunaModulos.ReadOnly = true;
             this.colunaModulos.Width = 125;
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(202, 48);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(201, 20);
+            this.checkBox4.TabIndex = 15;
+            this.checkBox4.Text = "Linguagem de Programação";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(112, 79);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(70, 20);
+            this.checkBox5.TabIndex = 16;
+            this.checkBox5.Text = "Redes";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(202, 79);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(131, 20);
+            this.checkBox6.TabIndex = 17;
+            this.checkBox6.Text = "Banco de Dados";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.Location = new System.Drawing.Point(3, 373);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(740, 40);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLimpar.Location = new System.Drawing.Point(3, 333);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(740, 40);
+            this.btnLimpar.TabIndex = 21;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            // 
             // JanelaCadastroTabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 367);
+            this.ClientSize = new System.Drawing.Size(754, 445);
             this.Controls.Add(this.tabControl);
             this.Name = "JanelaCadastroTabela";
             this.Text = "Sistema de Gestão Acadêmica";
@@ -521,9 +569,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton rdAluno;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.CheckBox checkFisica;
+        private System.Windows.Forms.CheckBox checkQuimica;
+        private System.Windows.Forms.CheckBox checkMatematica;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -433,7 +433,9 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colunaLogin,
@@ -459,7 +461,6 @@
             this.colunaLogin.MinimumWidth = 6;
             this.colunaLogin.Name = "colunaLogin";
             this.colunaLogin.ReadOnly = true;
-            this.colunaLogin.Width = 125;
             // 
             // colunaSenha
             // 
@@ -468,7 +469,6 @@
             this.colunaSenha.Name = "colunaSenha";
             this.colunaSenha.ReadOnly = true;
             this.colunaSenha.Visible = false;
-            this.colunaSenha.Width = 125;
             // 
             // colunaStatus
             // 
@@ -476,7 +476,6 @@
             this.colunaStatus.MinimumWidth = 6;
             this.colunaStatus.Name = "colunaStatus";
             this.colunaStatus.ReadOnly = true;
-            this.colunaStatus.Width = 125;
             // 
             // colunaTipo
             // 
@@ -484,7 +483,6 @@
             this.colunaTipo.MinimumWidth = 6;
             this.colunaTipo.Name = "colunaTipo";
             this.colunaTipo.ReadOnly = true;
-            this.colunaTipo.Width = 125;
             // 
             // colunaData
             // 
@@ -492,7 +490,6 @@
             this.colunaData.MinimumWidth = 6;
             this.colunaData.Name = "colunaData";
             this.colunaData.ReadOnly = true;
-            this.colunaData.Width = 125;
             // 
             // colunaPerfil
             // 
@@ -500,7 +497,6 @@
             this.colunaPerfil.MinimumWidth = 6;
             this.colunaPerfil.Name = "colunaPerfil";
             this.colunaPerfil.ReadOnly = true;
-            this.colunaPerfil.Width = 125;
             // 
             // colunaModulos
             // 
@@ -508,7 +504,6 @@
             this.colunaModulos.MinimumWidth = 6;
             this.colunaModulos.Name = "colunaModulos";
             this.colunaModulos.ReadOnly = true;
-            this.colunaModulos.Width = 125;
             // 
             // JanelaCadastroTabela
             // 

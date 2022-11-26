@@ -29,19 +29,20 @@ namespace AplicacaoEscolar
         private List<string> modulosEstudo;
         public List<string> ModuloEstudo { get; }
         
-        private DateTime dataCriacao { get; }
-        public DateTime DataCriacao { get; }
+        private string dataCriacao { get; }
+        public string DataCriacao { get; }
         
-        public Usuario(string login, string senha, ComboBox status, RadioButton tipo, RadioButton perfil, string obsExtra, List<string> modulosEstudo)
+        public Usuario(string login, string senha, ComboBox status, RadioButton tipo , string dataCriacao, RadioButton perfil, string obsExtra, List<string> modulosEstudo)
         {
             this.login = login;
             this.senha = senha;
             this.status = status;
             this.tipo = tipo;
+            this.dataCriacao = dataCriacao;
             this.perfil = perfil;
             this.obsExtra = obsExtra;
             this.modulosEstudo = modulosEstudo;
-            this.dataCriacao = DateTime.Now;
+           
         }
     }
 }

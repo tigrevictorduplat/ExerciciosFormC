@@ -3,23 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AplicacaoEscolar
 {
-    internal class Usuario
+    public class Usuario
     {
-        private string logi;
+        private string login;
+        public string Login { get; }
+        
         private string senha;
-        private string status;
-        private string tipo;
-        private string perfil;
+        public string Senha { get; }
+        
+        private ComboBox status;
+        public ComboBox Stauts { get; }
+        
+        private RadioButton tipo;
+        public RadioButton Tipo{ get; }
+        
+        private RadioButton perfil;
+        public RadioButton Perfil{ get; }
+        
         private string obsExtra;
-        private string[] modulosEstudo;
-        private DateTime dataCriacao;
-
-        Usuario(string login, string senha, string status, string tipo, string perfil, string obsExtra, string[] modulosEstudo, DateTime dataCriacao)
+        
+        private List<string> modulosEstudo;
+        public List<string> ModuloEstudo { get; }
+        
+        private DateTime dataCriacao { get; }
+        public DateTime DataCriacao { get; }
+        
+        public Usuario(string login, string senha, ComboBox status, RadioButton tipo, RadioButton perfil, string obsExtra, List<string> modulosEstudo)
         {
-            
+            this.login = login;
             this.senha = senha;
             this.status = status;
             this.tipo = tipo;

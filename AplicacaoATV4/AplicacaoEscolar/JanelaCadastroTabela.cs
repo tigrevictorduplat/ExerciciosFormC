@@ -48,12 +48,37 @@ namespace AplicacaoEscolar
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            List<string> modulo = new List<string>();
+
+            foreach (CheckBox checkBox in this.panelModulos.Controls)
+            {
+                modulo.Add(checkBox.Text);
+            }
+
             Usuario cadastroUsuario = new Usuario(
-                
+                this.txtBoxLogin.Text,
+                this.txtBoxSenha.Text,
+                this.cBoxStatus,
+                this.panelTipo.Controls.OfType<RadioButton>().FirstOrDefault(r=>r.Checked),
+                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked),
+                this.richTxtObs.Text,
+                modulo
+
                 );
 
             DataTable dt = new DataTable();
-            dt.Rows.Add(cadastroUsuario);
+            dt.Rows.Add();
+            dt.Rows[dataGridView.Rows.Count - 1][colunaLogin.Index] = cadastroUsuario.Login;
+            dt.Rows[dataGridView.Rows.Count - 1 ][colunaSenha.Index] = cadastroUsuario.Senha;
+            dt.Rows[dataGridView.Rows.Count - 1][colunaStatus.Index] = cadastroUsuario.Stauts;
+            dt.Rows[dataGridView.Rows.Count - 1][colunaTipo.Index] = cadastroUsuario.Tipo;
+            dt.Rows[dataGridView.Rows.Count - 1][colunaPerfil.Index] = cadastroUsuario.Perfil;
+            ComboBox cbModulo = new ComboBox();
+            cbModulo.Items.Add(cadastroUsuario.ModuloEstudo);
+            dt.Rows[dataGridView.Rows.Count][colunaModulos.Index] =  cbModulo;
+
+            dataGridView.DataSource = dt;
+            limparInfos();
         }
     }
 }

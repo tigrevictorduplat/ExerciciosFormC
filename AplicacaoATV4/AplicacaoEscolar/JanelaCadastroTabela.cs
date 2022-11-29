@@ -48,6 +48,7 @@ namespace AplicacaoEscolar
             {
                 if (checkBox.Checked) { modulosEscolhidos.Items.Add(checkBox.Text); }
             }
+            
             dataGridView.Rows.Add(
                 this.txtBoxLogin.Text,
                 this.txtBoxSenha.Text,
@@ -57,6 +58,7 @@ namespace AplicacaoEscolar
                 this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
                 modulosEscolhidos.DataSource
                 );
+
             limparInfos();
         }
     }

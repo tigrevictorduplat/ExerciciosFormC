@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageNovoCadastro = new System.Windows.Forms.TabPage();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -500,6 +501,10 @@
             // 
             // colunaModulos
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            this.colunaModulos.DefaultCellStyle = dataGridViewCellStyle1;
             this.colunaModulos.HeaderText = "Módulos Incritos";
             this.colunaModulos.MinimumWidth = 6;
             this.colunaModulos.Name = "colunaModulos";
@@ -536,13 +541,6 @@
         private System.Windows.Forms.TabPage tabPageNovoCadastro;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaLogin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaSenha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaTipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaPerfil;
-        private System.Windows.Forms.DataGridViewComboBoxColumn colunaModulos;
         private System.Windows.Forms.RichTextBox richTxtObs;
         private System.Windows.Forms.TextBox txtBoxSenha;
         private System.Windows.Forms.TextBox txtBoxLogin;
@@ -573,5 +571,12 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaLogin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaSenha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaPerfil;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colunaModulos;
     }
 }

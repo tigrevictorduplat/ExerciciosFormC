@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AplicacaoEscolar
@@ -48,37 +43,20 @@ namespace AplicacaoEscolar
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            List<string> modulosEscolhidos = new List<string>();
-
+            ComboBox modulosEscolhidos = new ComboBox();
             foreach (CheckBox checkBox in this.panelModulos.Controls)
             {
-                if (checkBox.Checked) { modulosEscolhidos.Add(checkBox.Text); }
+                if (checkBox.Checked) { modulosEscolhidos.Items.Add(checkBox.Text); }
             }
-
-            Usuario cadastroUsuario = new Usuario(
+            dataGridView.Rows.Add(
                 this.txtBoxLogin.Text,
                 this.txtBoxSenha.Text,
-                this.cBoxStatus,
-                this.panelTipo.Controls.OfType<RadioButton>().FirstOrDefault(r=>r.Checked),
+                this.cBoxStatus.Text,
+                this.panelTipo.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
                 this.dateTimePicker.Text,
-                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked),
-                this.richTxtObs.Text,
-                modulosEscolhidos
-
+                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
+                modulosEscolhidos.DataSource
                 );
-            ComboBox usuarioModulo = new ComboBox();
-            usuarioModulo.Items.Add(modulosEscolhidos);
-
-            dataGridView.Rows.Add(
-                cadastroUsuario.Login,
-                cadastroUsuario.Senha,
-                cadastroUsuario.Stauts,
-                cadastroUsuario.Tipo,
-                cadastroUsuario.DataCriacao,
-                cadastroUsuario.Perfil,
-                usuarioModulo
-                );
-
             limparInfos();
         }
     }

@@ -52,7 +52,6 @@
     <Compile Include="JanelaCadastroTabela.Designer.cs">
       <DependentUpon>JanelaCadastroTabela.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuario.cs" />
     <Compile Include="JanelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -6,6 +6,7 @@ C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\Exercici
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.JanelaCadastroTabela.resources
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.JanelaInicial.resources
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.Properties.Resources.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.TesteCombo.resources
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.csproj.GenerateResource.cache
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.csproj.CoreCompileInputs.cache
 C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV4\AplicacaoEscolar\obj\Debug\AplicacaoEscolar.exe

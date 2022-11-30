@@ -44,22 +44,28 @@ namespace AplicacaoEscolar
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             ComboBox modulosEscolhidos = new ComboBox();
+
             foreach (CheckBox checkBox in this.panelModulos.Controls)
             {
-                if (checkBox.Checked) { modulosEscolhidos.Items.Add(checkBox.Text); }
+                if (checkBox.Checked)
+                {
+                    modulosEscolhidos.Items.Add(checkBox.Text);
+                }
+
             }
-            
             dataGridView.Rows.Add(
                 this.txtBoxLogin.Text,
                 this.txtBoxSenha.Text,
                 this.cBoxStatus.Text,
                 this.panelTipo.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
                 this.dateTimePicker.Text,
-                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
-                modulosEscolhidos.DataSource
-                );
+                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text
+                ) ;
 
+            colunaModulos.Items.Add(new ComboBox());
+            colunaModulos.Items[dataGridView.RowCount - 1] = modulosEscolhidos;
             limparInfos();
+            //
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageNovoCadastro = new System.Windows.Forms.TabPage();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -69,7 +68,9 @@
             this.colunaTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colunaData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colunaPerfil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colunaModulos = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.colunaModulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colunaOBS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colunaMostrar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabControl.SuspendLayout();
             this.tabPageNovoCadastro.SuspendLayout();
             this.panelPerfil.SuspendLayout();
@@ -88,7 +89,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(754, 445);
+            this.tabControl.Size = new System.Drawing.Size(827, 526);
             this.tabControl.TabIndex = 0;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
@@ -112,7 +113,7 @@
             this.tabPageNovoCadastro.Location = new System.Drawing.Point(4, 25);
             this.tabPageNovoCadastro.Name = "tabPageNovoCadastro";
             this.tabPageNovoCadastro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageNovoCadastro.Size = new System.Drawing.Size(746, 416);
+            this.tabPageNovoCadastro.Size = new System.Drawing.Size(819, 497);
             this.tabPageNovoCadastro.TabIndex = 0;
             this.tabPageNovoCadastro.Text = "Novo Cadastro";
             this.tabPageNovoCadastro.UseVisualStyleBackColor = true;
@@ -120,9 +121,9 @@
             // btnLimpar
             // 
             this.btnLimpar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnLimpar.Location = new System.Drawing.Point(3, 333);
+            this.btnLimpar.Location = new System.Drawing.Point(3, 414);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(740, 40);
+            this.btnLimpar.Size = new System.Drawing.Size(813, 40);
             this.btnLimpar.TabIndex = 21;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -131,9 +132,9 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCadastrar.Location = new System.Drawing.Point(3, 373);
+            this.btnCadastrar.Location = new System.Drawing.Point(3, 454);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(740, 40);
+            this.btnCadastrar.Size = new System.Drawing.Size(813, 40);
             this.btnCadastrar.TabIndex = 20;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -143,7 +144,7 @@
             // 
             this.lblPerfil.AutoSize = true;
             this.lblPerfil.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerfil.Location = new System.Drawing.Point(315, 132);
+            this.lblPerfil.Location = new System.Drawing.Point(328, 148);
             this.lblPerfil.Name = "lblPerfil";
             this.lblPerfil.Size = new System.Drawing.Size(49, 19);
             this.lblPerfil.TabIndex = 5;
@@ -153,7 +154,7 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(318, 53);
+            this.lblTipo.Location = new System.Drawing.Point(328, 53);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(43, 19);
             this.lblTipo.TabIndex = 3;
@@ -163,7 +164,7 @@
             // 
             this.panelPerfil.Controls.Add(this.rdConvidado);
             this.panelPerfil.Controls.Add(this.rdAdministrador);
-            this.panelPerfil.Location = new System.Drawing.Point(391, 108);
+            this.panelPerfil.Location = new System.Drawing.Point(407, 138);
             this.panelPerfil.Name = "panelPerfil";
             this.panelPerfil.Size = new System.Drawing.Size(238, 64);
             this.panelPerfil.TabIndex = 13;
@@ -196,7 +197,7 @@
             this.cBoxStatus.Items.AddRange(new object[] {
             "Ativo",
             "Inativo"});
-            this.cBoxStatus.Location = new System.Drawing.Point(90, 117);
+            this.cBoxStatus.Location = new System.Drawing.Point(90, 133);
             this.cBoxStatus.Name = "cBoxStatus";
             this.cBoxStatus.Size = new System.Drawing.Size(148, 24);
             this.cBoxStatus.TabIndex = 11;
@@ -206,7 +207,7 @@
             // 
             this.lblModulo.AutoSize = true;
             this.lblModulo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModulo.Location = new System.Drawing.Point(302, 223);
+            this.lblModulo.Location = new System.Drawing.Point(318, 263);
             this.lblModulo.Name = "lblModulo";
             this.lblModulo.Size = new System.Drawing.Size(75, 19);
             this.lblModulo.TabIndex = 7;
@@ -215,14 +216,14 @@
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Location = new System.Drawing.Point(11, 184);
+            this.dateTimePicker.Location = new System.Drawing.Point(11, 204);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(266, 22);
             this.dateTimePicker.TabIndex = 10;
             // 
             // richTxtObs
             // 
-            this.richTxtObs.Location = new System.Drawing.Point(22, 243);
+            this.richTxtObs.Location = new System.Drawing.Point(22, 289);
             this.richTxtObs.Name = "richTxtObs";
             this.richTxtObs.Size = new System.Drawing.Size(258, 80);
             this.richTxtObs.TabIndex = 9;
@@ -232,7 +233,7 @@
             // 
             this.lblObs.AutoSize = true;
             this.lblObs.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObs.Location = new System.Drawing.Point(86, 221);
+            this.lblObs.Location = new System.Drawing.Point(86, 267);
             this.lblObs.Name = "lblObs";
             this.lblObs.Size = new System.Drawing.Size(118, 19);
             this.lblObs.TabIndex = 6;
@@ -242,7 +243,7 @@
             // 
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(86, 153);
+            this.lblData.Location = new System.Drawing.Point(86, 173);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(140, 19);
             this.lblData.TabIndex = 4;
@@ -253,7 +254,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(18, 120);
+            this.lblStatus.Location = new System.Drawing.Point(18, 136);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(60, 19);
             this.lblStatus.TabIndex = 2;
@@ -264,7 +265,7 @@
             this.panelTipo.Controls.Add(this.rdAluno);
             this.panelTipo.Controls.Add(this.rdProfessor);
             this.panelTipo.Controls.Add(this.rdTecnico);
-            this.panelTipo.Location = new System.Drawing.Point(391, 38);
+            this.panelTipo.Location = new System.Drawing.Point(407, 38);
             this.panelTipo.Name = "panelTipo";
             this.panelTipo.Size = new System.Drawing.Size(282, 64);
             this.panelTipo.TabIndex = 12;
@@ -356,7 +357,7 @@
             this.panelModulos.Controls.Add(this.checkQuimica);
             this.panelModulos.Controls.Add(this.checkBox4);
             this.panelModulos.Controls.Add(this.checkMatematica);
-            this.panelModulos.Location = new System.Drawing.Point(391, 188);
+            this.panelModulos.Location = new System.Drawing.Point(407, 228);
             this.panelModulos.Name = "panelModulos";
             this.panelModulos.Size = new System.Drawing.Size(338, 107);
             this.panelModulos.TabIndex = 19;
@@ -427,7 +428,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(746, 416);
+            this.tabPage2.Size = new System.Drawing.Size(819, 497);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tabela";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -445,16 +446,19 @@
             this.colunaTipo,
             this.colunaData,
             this.colunaPerfil,
-            this.colunaModulos});
+            this.colunaModulo,
+            this.colunaOBS,
+            this.colunaMostrar});
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(3, 3);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
-            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView.Size = new System.Drawing.Size(740, 410);
+            this.dataGridView.Size = new System.Drawing.Size(813, 491);
             this.dataGridView.TabIndex = 0;
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
             // 
             // colunaLogin
             // 
@@ -499,22 +503,34 @@
             this.colunaPerfil.Name = "colunaPerfil";
             this.colunaPerfil.ReadOnly = true;
             // 
-            // colunaModulos
+            // colunaModulo
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
-            this.colunaModulos.DefaultCellStyle = dataGridViewCellStyle1;
-            this.colunaModulos.HeaderText = "Módulos Incritos";
-            this.colunaModulos.MinimumWidth = 6;
-            this.colunaModulos.Name = "colunaModulos";
-            this.colunaModulos.ReadOnly = true;
+            this.colunaModulo.HeaderText = "Módulos Inscritos";
+            this.colunaModulo.MinimumWidth = 6;
+            this.colunaModulo.Name = "colunaModulo";
+            this.colunaModulo.ReadOnly = true;
+            // 
+            // colunaOBS
+            // 
+            this.colunaOBS.HeaderText = "Observações";
+            this.colunaOBS.MinimumWidth = 6;
+            this.colunaOBS.Name = "colunaOBS";
+            this.colunaOBS.ReadOnly = true;
+            this.colunaOBS.Visible = false;
+            // 
+            // colunaMostrar
+            // 
+            this.colunaMostrar.HeaderText = "Info+";
+            this.colunaMostrar.MinimumWidth = 6;
+            this.colunaMostrar.Name = "colunaMostrar";
+            this.colunaMostrar.ReadOnly = true;
+            this.colunaMostrar.Text = "Mostrar";
             // 
             // JanelaCadastroTabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 445);
+            this.ClientSize = new System.Drawing.Size(827, 526);
             this.Controls.Add(this.tabControl);
             this.Name = "JanelaCadastroTabela";
             this.Text = "Sistema de Gestão Acadêmica";
@@ -577,6 +593,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colunaTipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colunaData;
         private System.Windows.Forms.DataGridViewTextBoxColumn colunaPerfil;
-        private System.Windows.Forms.DataGridViewComboBoxColumn colunaModulos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaModulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaOBS;
+        private System.Windows.Forms.DataGridViewButtonColumn colunaMostrar;
     }
 }

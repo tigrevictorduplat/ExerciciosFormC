@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -43,13 +44,13 @@ namespace AplicacaoEscolar
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            ComboBox modulosEscolhidos = new ComboBox();
+            String modulosEscolhidos = "";
 
             foreach (CheckBox checkBox in this.panelModulos.Controls)
             {
                 if (checkBox.Checked)
                 {
-                    modulosEscolhidos.Items.Add(checkBox.Text);
+                    modulosEscolhidos+= checkBox.Text+", ";
                 }
 
             }
@@ -59,13 +60,26 @@ namespace AplicacaoEscolar
                 this.cBoxStatus.Text,
                 this.panelTipo.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
                 this.dateTimePicker.Text,
-                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text
+                this.panelPerfil.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text,
+                modulosEscolhidos,
+                this.richTxtObs.Text,
+                "Mostrar"
+                
                 ) ;
-
-            colunaModulos.Items.Add(new ComboBox());
-            colunaModulos.Items[dataGridView.RowCount - 1] = modulosEscolhidos;
             limparInfos();
             //
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                senderGrid.Columns[colunaSenha.Index].Visible = (senderGrid.Columns[colunaSenha.Index].Visible) ? false : true;
+                senderGrid.Columns[colunaOBS.Index].Visible = (senderGrid.Columns[colunaOBS.Index].Visible) ? false : true;
+            }
         }
     }
 }

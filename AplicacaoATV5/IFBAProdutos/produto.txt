@@ -1,0 +1,4 @@
+Descrição do Produto: Maça
+Data de Validade: 28/12/2022
+Quantidade: 30
+Preço Unitário: R$0,30

@@ -1,0 +1,12 @@
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\bin\Debug\FormLoja.exe.config
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\bin\Debug\FormLoja.exe
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\bin\Debug\FormLoja.pdb
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.csproj.AssemblyReference.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.csproj.SuggestedBindingRedirects.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.JanelaCadastro.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.Properties.Resources.resources
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.csproj.GenerateResource.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.csproj.CoreCompileInputs.cache
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.exe
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.pdb
+C:\Users\cinco\OneDrive\Documentos\GitHub\ProjetosCSharp\Exercicios4ano\ExerciciosFormsC\ExerciciosFormC\AplicacaoATV5\FormLoja\obj\Debug\FormLoja.JanelaProduto.resources
